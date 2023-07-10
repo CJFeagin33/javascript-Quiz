@@ -29,7 +29,7 @@
 }
 
 .titleJS {
-  padding: 1%;
+  padding: .5%;
   display: inline;
   background-color: brown;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -38,6 +38,7 @@
 
 .text-body {
   border: 6px solid red;
+  margin-top: 2%;
 }
 
 .text-body li {
