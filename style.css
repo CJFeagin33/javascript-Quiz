@@ -1,0 +1,71 @@
+* {
+  background-color: rgb(41, 41, 78);
+  color: white;
+  text-align: center;
+}
+
+.highscores {
+  text-align: left;
+  padding-bottom: 10%;
+  padding-top: 1%;
+  padding-left: 1%;
+}
+
+.highscores button {
+  width: 20%;
+  font-size: 110%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: green;
+  color: blueviolet;
+}
+
+.highscores button:hover {
+  transform: scale(1.03);
+  font-size:120%;
+}
+
+.section-2 div {
+  padding: 2.5%
+}
+
+h1 {
+  padding: 1%;
+  display: inline;
+  background-color: brown;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 200%;
+}
+
+li {
+  margin: auto;
+  padding-top: 2%;
+  text-align: center;
+  line-height: 150%;
+  list-style: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#li4 {
+  padding-bottom: 2%;
+}
+
+.text-body {
+  border: 6px solid red;
+}
+
+.beginQuiz{
+  padding: 5%;
+}
+
+.beginQuiz button{
+  width: 16%;
+  font-size: 140%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: green;
+  color: blueviolet;
+}
+
+.beginQuiz button:hover {
+  transform: scale(1.03);
+  font-size:150%;
+}
