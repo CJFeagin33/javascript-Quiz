@@ -314,7 +314,7 @@
 }
 
 #backToHome-icon {
-  display: inline;
+  display: none;
 }
 
 .returnToHome {
