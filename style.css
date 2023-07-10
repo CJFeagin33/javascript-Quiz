@@ -4,9 +4,13 @@
   text-align: center;
 }
 
+#landing-page {
+  display: inline;
+}
+
 .highscores {
   text-align: left;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   padding-top: 1%;
   padding-left: 1%;
 }
@@ -24,11 +28,7 @@
   font-size:120%;
 }
 
-.section-2 div {
-  padding: 2.5%
-}
-
-h1 {
+.titleJS {
   padding: 1%;
   display: inline;
   background-color: brown;
@@ -36,7 +36,11 @@ h1 {
   font-size: 200%;
 }
 
-li {
+.text-body {
+  border: 6px solid red;
+}
+
+.text-body li {
   margin: auto;
   padding-top: 2%;
   text-align: center;
@@ -47,10 +51,6 @@ li {
 
 #li4 {
   padding-bottom: 2%;
-}
-
-.text-body {
-  border: 6px solid red;
 }
 
 .beginQuiz{
@@ -68,4 +68,268 @@ li {
 .beginQuiz button:hover {
   transform: scale(1.03);
   font-size:150%;
+}
+
+#Timer-icon {
+  display: none;
+}
+
+.timer {
+  text-align: right;
+  padding-right: 2%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#HighScores-page {
+  display: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mostRecentScore {
+  padding-top: 10%;
+}
+
+.clearHighScores button{
+  width: 20%;
+  font-size: 110%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: green;
+  color: blueviolet;
+}
+
+.clearHighScores button:hover{
+  transform: scale(1.03);
+  font-size:120%;
+}
+
+#question1-page{
+  display: none;
+}
+
+.question1 {
+  border: 6px solid red;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.question1 button{
+  width: 100%;
+  margin-bottom: 2%;
+  font-size: 110%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: green;
+  color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#question2-page{
+  display: none;
+}
+
+.question2 {
+  border: 6px solid red;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.question2 button{
+  width: 100%;
+  margin-bottom: 2%;
+  font-size: 110%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: green;
+  color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#question3-page{
+  display: none;
+}
+
+.question3 {
+  border: 6px solid red;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.question3 button{
+  width: 100%;
+  margin-bottom: 2%;
+  font-size: 110%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: green;
+  color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#question4-page{
+  display: none;
+}
+
+.question4 {
+  border: 6px solid red;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.question4 button{
+  width: 100%;
+  margin-bottom: 2%;
+  font-size: 110%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: green;
+  color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#question5-page{
+  display: none;
+}
+
+.question5 {
+  border: 6px solid red;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.question5 button{
+  width: 100%;
+  margin-bottom: 2%;
+  font-size: 110%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: green;
+  color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#question6-page{
+  display: none;
+}
+
+.question6 {
+  border: 6px solid red;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.question6 button{
+  width: 100%;
+  margin-bottom: 2%;
+  font-size: 110%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: green;
+  color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#question7-page{
+  display: none;
+}
+
+.question7 {
+  border: 6px solid red;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.question7 button{
+  width: 100%;
+  margin-bottom: 2%;
+  font-size: 110%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: green;
+  color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#question8-page{
+  display: none;
+}
+
+.question8 {
+  border: 6px solid red;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.question8 button{
+  width: 100%;
+  margin-bottom: 2%;
+  font-size: 110%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: green;
+  color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#question9-page{
+  display: none;
+}
+
+.question9 {
+  border: 6px solid red;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.question9 button{
+  width: 100%;
+  margin-bottom: 2%;
+  font-size: 110%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: green;
+  color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#question10-page{
+  display: none;
+}
+
+.question10 {
+  border: 6px solid red;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.question10 button{
+  width: 100%;
+  margin-bottom: 2%;
+  font-size: 110%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: green;
+  color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#backToHome-icon {
+  display: inline;
+}
+
+.returnToHome {
+  text-align: center;
+  padding-top: 25%;
+}
+
+.returnToHome button{
+  width: 25%;
+  font-size: 110%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: green;
+  color: blueviolet;
+}
+
+.returnToHome button:hover{
+  transform: scale(1.03);
+  font-size:120%;
 }
