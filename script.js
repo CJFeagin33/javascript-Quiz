@@ -4,6 +4,9 @@ var highScoresButton = document.querySelector("#highScoresButton");
 var returnToHomePageButton = document.querySelector("#backToHome-icon");
 var beginQuizButton = document.querySelector("#beginQuizButton");
 
+// variable that contains the users initials
+var userInitials = [];
+
 // button variables used in questions-pages
 var answer1 = document.querySelector(".answer1");
 var wrong1x1 = document.querySelector(".wrong1x1");
@@ -119,6 +122,13 @@ var visitHighScores = function() {
 // connected to return to home page button. refreshes the web page on click
 var returnToHomePage = function() {
   window.location.reload();
+}
+
+// ask the user to input their initials before the quiz starts
+var userInitialsFunction = function () {
+  userInitials = prompt("Please enter your Initials before taking the quiz:");
+  console.log(userInitials);
+  question1Page();
 }
 
 // sets the display for question1-page. This marks the beginning of the Quiz
@@ -405,16 +415,20 @@ var navigateToHighScoresPage = function () {
   timerIcon.style.display = "none";
 
   // calculate final score, save score to local storage and display it on the High Scores Page.
-  var mostRecentScore = secondsLeft
+  var mostRecentScore = userInitials + " : " + secondsLeft
   console.log(mostRecentScore)
 
   visitHighScores();
 }
 
+var saveYourHighScore = function () {
+
+}
+
 // event listeners
 highScoresButton.addEventListener("click", visitHighScores);
 returnToHomePageButton.addEventListener("click", returnToHomePage);
-beginQuizButton.addEventListener("click", question1Page);
+beginQuizButton.addEventListener("click", userInitialsFunction);
 
 // event listeners for questions pages
 answer1.addEventListener("click", answer1Function);
