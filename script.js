@@ -55,7 +55,7 @@ var wrong10x1 = document.querySelector(".wrong10x1");
 var wrong10x2 = document.querySelector(".wrong10x2");
 var wrong10x3 = document.querySelector(".wrong10x3");
 
-// variables that represents whether or not the user got the question correct. these variables needs to be globally defined
+// variables that represents whether or not the user got the question correct. these variables need to be globally defined
 var answer1Value = [];
 var answer2Value = [];
 var answer3Value = [];
@@ -405,6 +405,8 @@ var navigateToHighScoresPage = function () {
   timerIcon.style.display = "none";
 
   // calculate final score, save score to local storage and display it on the High Scores Page.
+  var mostRecentScore = secondsLeft
+  console.log(mostRecentScore)
 
   visitHighScores();
 }
