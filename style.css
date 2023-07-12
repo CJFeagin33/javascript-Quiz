@@ -90,6 +90,10 @@ body {
   padding-top: 10%;
 }
 
+.mostRecentScoreText {
+  padding-top: 5%;
+}
+
 .clearHighScores button{
   width: 20%;
   font-size: 110%;

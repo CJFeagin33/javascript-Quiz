@@ -3,9 +3,12 @@
 var highScoresButton = document.querySelector("#highScoresButton");
 var returnToHomePageButton = document.querySelector("#backToHome-icon");
 var beginQuizButton = document.querySelector("#beginQuizButton");
+var clearHighScoresButton = document.querySelector("#clearHighScoresBtn")
 
-// variable that contains the users initials
+// variable that contains the users initials and score
 var userInitials = [];
+// var finalScore = [];
+var mostRecentScore = document.querySelector(".mostRecentScoreText");
 
 // button variables used in questions-pages
 var answer1 = document.querySelector(".answer1");
@@ -72,8 +75,8 @@ var answer10Value = [];
 
 // timer variables which also need to be globally defined
 var timeEl = document.querySelector(".timer");
-var penaltyEl = document.querySelector(".penalty");
 var secondsLeft = 120;
+var timerInterval = []
 
 var setTime = function () {
   var timerInterval = setInterval(function() {
@@ -117,6 +120,13 @@ var visitHighScores = function() {
   question10.style.display = "none";
   var timerIcon = document.getElementById("Timer-icon");
   timerIcon.style.display = "none";
+
+  mostRecentScore.textContent = localStorage.getItem('finalScore');
+  console.log(mostRecentScore)
+}
+
+var clearLocalStorage = function () {
+  localStorage.clear();
 }
 
 // connected to return to home page button. refreshes the web page on click
@@ -413,22 +423,18 @@ var navigateToHighScoresPage = function () {
   question10.style.display = "none";
   var timerIcon = document.getElementById("Timer-icon");
   timerIcon.style.display = "none";
-
-  // calculate final score, save score to local storage and display it on the High Scores Page.
-  var mostRecentScore = userInitials + " : " + secondsLeft
-  console.log(mostRecentScore)
-
+  var finalScore = userInitials + " : " + secondsLeft;
+  console.log(finalScore);
+  localStorage.setItem('finalScore', finalScore);
+  clearInterval(timerInterval);
   visitHighScores();
-}
-
-var saveYourHighScore = function () {
-
 }
 
 // event listeners
 highScoresButton.addEventListener("click", visitHighScores);
 returnToHomePageButton.addEventListener("click", returnToHomePage);
 beginQuizButton.addEventListener("click", userInitialsFunction);
+clearHighScoresButton.addEventListener("click", clearLocalStorage);
 
 // event listeners for questions pages
 answer1.addEventListener("click", answer1Function);
