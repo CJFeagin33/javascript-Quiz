@@ -67,6 +67,23 @@ var answer8Value = [];
 var answer9Value = [];
 var answer10Value = [];
 
+// timer variables which also need to be globally defined
+var timeEl = document.querySelector(".timer");
+var penaltyEl = document.querySelector(".penalty");
+var secondsLeft = 120;
+
+var setTime = function () {
+  var timerInterval = setInterval(function() {
+    secondsLeft--;
+    timeEl.textContent = secondsLeft + " seconds left till Quiz Termination.";
+
+    if (secondsLeft === 0) {
+      clearInterval(timerInterval);
+      visitHighScores()
+    }
+  },1000)
+}
+
 // function for visiting the highscores page
 var visitHighScores = function() {
   var landingPage = document.getElementById("landing-page");
@@ -75,6 +92,28 @@ var visitHighScores = function() {
   highScoresPage.style.display = "inline";
   var returnHomeBtn = document.getElementById("backToHome-icon");
   returnHomeBtn.style.display = "inline";
+  var question1 = document.getElementById("question1-page");
+  question1.style.display = "none";
+  var question2 = document.getElementById("question2-page");
+  question2.style.display = "none";
+  var question3 = document.getElementById("question3-page");
+  question3.style.display = "none";
+  var question4 = document.getElementById("question4-page");
+  question4.style.display = "none";
+  var question5 = document.getElementById("question5-page");
+  question5.style.display = "none";
+  var question6 = document.getElementById("question6-page");
+  question6.style.display = "none";
+  var question7 = document.getElementById("question7-page");
+  question7.style.display = "none";
+  var question8 = document.getElementById("question8-page");
+  question8.style.display = "none";
+  var question9 = document.getElementById("question9-page");
+  question9.style.display = "none";
+  var question10 = document.getElementById("question10-page");
+  question10.style.display = "none";
+  var timerIcon = document.getElementById("Timer-icon");
+  timerIcon.style.display = "none";
 }
 
 // connected to return to home page button. refreshes the web page on click
@@ -84,6 +123,8 @@ var returnToHomePage = function() {
 
 // sets the display for question1-page. This marks the beginning of the Quiz
 var question1Page = function() {
+  setTime();
+
   var landingPage = document.getElementById("landing-page");
   landingPage.style.display = "none";
   var timerIcon = document.getElementById("Timer-icon");
@@ -112,9 +153,8 @@ var navigateToQuestion2Page = function () {
     console.log('Correct!');
   } else {
     console.log('Incorrect! Minus time!');
+    secondsLeft = secondsLeft-10;
   }
-
-  // add timer functionality, let user know if they got it right, set small interval (2sec) before navigating to question2-page.
 
   var question1 = document.getElementById("question1-page");
   question1.style.display = "none";
@@ -140,9 +180,8 @@ var navigateToQuestion3Page = function () {
     console.log('Correct!');
   } else {
     console.log('Incorrect! Minus time!');
+    secondsLeft = secondsLeft-10;
   }
-
-  // add timer functionality, let user know if they got it right, set small interval (2sec) before navigating to question3-page.
 
   var question2 = document.getElementById("question2-page");
   question2.style.display = "none";
@@ -168,9 +207,8 @@ var navigateToQuestion4Page = function () {
     console.log('Correct!');
   } else {
     console.log('Incorrect! Minus time!');
+    secondsLeft = secondsLeft-10;;
   }
-
-  // add timer functionality, let user know if they got it right, set small interval (2sec) before navigating to question4-page.
 
   var question3 = document.getElementById("question3-page");
   question3.style.display = "none";
@@ -196,9 +234,8 @@ var navigateToQuestion5Page = function () {
     console.log('Correct!');
   } else {
     console.log('Incorrect! Minus time!');
+    secondsLeft = secondsLeft-10;;
   }
-
-  // add timer functionality, let user know if they got it right, set small interval (2sec) before navigating to question5-page.
 
   var question4 = document.getElementById("question4-page");
   question4.style.display = "none";
@@ -224,9 +261,8 @@ var navigateToQuestion6Page = function () {
     console.log('Correct!');
   } else {
     console.log('Incorrect! Minus time!');
+    secondsLeft = secondsLeft-10;
   }
-
-  // add timer functionality, let user know if they got it right, set small interval (2sec) before navigating to question6-page.
 
   var question5 = document.getElementById("question5-page");
   question5.style.display = "none";
@@ -252,9 +288,8 @@ var navigateToQuestion7Page = function () {
     console.log('Correct!');
   } else {
     console.log('Incorrect! Minus time!');
+    secondsLeft = secondsLeft-10;
   }
-
-  // add timer functionality, let user know if they got it right, set small interval (2sec) before navigating to question7-page.
 
   var question6 = document.getElementById("question6-page");
   question6.style.display = "none";
@@ -280,9 +315,8 @@ var navigateToQuestion8Page = function () {
     console.log('Correct!');
   } else {
     console.log('Incorrect! Minus time!');
+    secondsLeft = secondsLeft-10;
   }
-
-  // add timer functionality, let user know if they got it right, set small interval (2sec) before navigating to question8-page.
 
   var question7 = document.getElementById("question7-page");
   question7.style.display = "none";
@@ -308,9 +342,8 @@ var navigateToQuestion9Page = function () {
     console.log('Correct!');
   } else {
     console.log('Incorrect! Minus time!');
+    secondsLeft = secondsLeft-10;
   }
-
-  // add timer functionality, let user know if they got it right, set small interval (2sec) before navigating to question9-page.
 
   var question8 = document.getElementById("question8-page");
   question8.style.display = "none";
@@ -336,9 +369,8 @@ var navigateToQuestion10Page = function () {
     console.log('Correct!');
   } else {
     console.log('Incorrect! Minus time!');
+    secondsLeft = secondsLeft-10;
   }
-
-  // add timer functionality, let user know if they got it right, set small interval (2sec) before navigating to question10-page.
 
   var question9 = document.getElementById("question9-page");
   question9.style.display = "none";
@@ -364,9 +396,8 @@ var navigateToHighScoresPage = function () {
     console.log('Correct!');
   } else {
     console.log('Incorrect! Minus time!');
+    secondsLeft = secondsLeft-10;
   }
-
-  // add timer functionality, let user know if they got it right, set small interval (2sec) before navigating to highscores page.
 
   var question10 = document.getElementById("question10-page");
   question10.style.display = "none";
