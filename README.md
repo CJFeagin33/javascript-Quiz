@@ -14,7 +14,7 @@ This entire project was made in Visual Studio. We were provided an example of an
 
 The final product looks like this:
 
-<img src="Final-Product-Screenshot.png">
+<!-- <img src="Final-Product-Screenshot.png"> -->
 
 If you click the View Scores button, the application will take you to a page where you can see your most recent score, and the initials of the user.
 
