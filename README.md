@@ -16,7 +16,7 @@ The final product looks like this:
 
 <img src="Final-Product-Screenshot.png">
 
-If you click the view highscores button, the application will take you to a page where you can see your most recent score, and the initials of the user.
+If you click the View Scores button, the application will take you to a page where you can see your most recent score, and the initials of the user.
 
 If you click the Begin Quiz button, you will be prompted to enter your initials, then the Quiz and timer will begin.
 
