@@ -7,7 +7,6 @@ var clearHighScoresButton = document.querySelector("#clearHighScoresBtn")
 
 // variable that contains the users initials and score
 var userInitials = [];
-// var finalScore = [];
 var mostRecentScore = document.querySelector(".mostRecentScoreText");
 
 // button variables used in questions-pages
@@ -127,6 +126,7 @@ var visitHighScores = function() {
 
 var clearLocalStorage = function () {
   localStorage.clear();
+  visitHighScores();
 }
 
 // connected to return to home page button. refreshes the web page on click
@@ -137,6 +137,12 @@ var returnToHomePage = function() {
 // ask the user to input their initials before the quiz starts
 var userInitialsFunction = function () {
   userInitials = prompt("Please enter your Initials before taking the quiz:");
+  console.log(userInitials);
+  if (userInitials === null) {
+    alert("Error! Please enter your initials before starting the Quiz!");
+    returnToHomePage();
+  }
+
   console.log(userInitials);
   question1Page();
 }
